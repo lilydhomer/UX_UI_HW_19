@@ -1,0 +1,326 @@
+/* Navigation styles */
+
+
+.hamburgerMenu {
+    display: none;
+}
+.navigation {
+    width: 98%;
+    top: 0;
+    position: fixed;
+    z-index: 102;
+    height: 70px;
+    padding: 1%;
+    left: 0px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e5ff33;
+
+}
+
+
+.left-nav {
+    vertical-align: top;
+    top: -10px;
+    width:30%;
+    position: fixed;
+    height: 70px;
+    display: inline-block;
+    padding: 1%;
+    margin-left:1%;
+}
+.left-nav ul {
+    display: inline-block;
+    width: 100%;
+
+}
+.left-nav li {
+    display: inline-block;
+    padding: 2%;
+    color: #000c94;
+    font-size: 2rem;
+ 
+}
+
+.logo {
+    padding: 1%;
+    text-align: center;
+    height: 50px;
+    margin: 0 40%;
+    top: 10px;
+    background-image: url("../images/logo.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: fixed;
+    width: 16%;
+}
+
+
+.right-nav {
+    vertical-align: top;
+    top: 0;
+    width:25%;
+    right: 3%;
+    position: fixed;
+    height: 70px;
+    padding: 1%;
+    display: inline-block;
+}
+
+.right-nav ul {
+    width: 100%;
+
+}
+
+.right-nav li {
+    display: inline-block;
+    padding: 1%;
+    color: #000c94;
+    font-size: 1.7rem;
+}
+
+/* Main body content */
+
+body {
+    border: 2px solid redblack;
+    overflow-x:hidden;
+}
+.content {
+    width: 80%;
+    margin: 0% auto;
+    position: relative;
+    top: 150px;
+    margin-bottom: 10%;
+}
+
+.content img {
+    width: 70%;
+    padding: 0 15%;
+}
+
+
+button {
+    padding: 20px 50px;
+    margin-top: 7%;
+    background-color: #000c94;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #373738;
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    bottom: -10px;
+    padding: 1%;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-bottom: 4%;
+}
+
+footer ul {
+    color: #e0e0e0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 1%;
+    font-size: 1.7rem;
+}
+
+/* Typography */
+ p, li, ul, h1, h2, h3 {
+    font-family: 'Nunito', sans-serif;;
+}
+p {
+    font-size: 1.5rem;
+}
+
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    margin: 5% 0% 5% 0%;
+}
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+mark {
+    background-color: #e5ff33;
+    padding: 0px 5px;
+ }
+
+    /* About Styles */
+.projectHeader {
+    background-color: #6971c4;
+    color: #ffffff;
+    position: relative;
+    z-index: 99;
+    width: 120vw;
+    left: -20%;
+    padding: 3% 0% 3% 20%;
+}
+  
+.projects {
+    display: flex;
+    margin-bottom: 25%;
+}
+
+.aboutDescription {
+    display: inline-block;
+    position: relative;
+    background-color: #2e2e2e;
+    width: 50%;
+    left: 10%;
+    color: #ffffff;
+    padding: 4%;
+    font-size: 2rem;
+}
+.skills {
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    background-color: #d4d4d475;
+    margin: -8% 5% -5% 0%;
+    padding: 7% 2% 2% 2%;
+    left: -2%;
+}
+
+.skill1 {
+    width: 33%;
+    z-index: 100;
+
+}
+.skill2 {
+    width: 33%;
+    z-index: 98;
+}
+.skill3 {
+    width: 33%;
+    z-index: 97;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .content {
+        width: 80%;
+        margin: 0% auto;
+        top: 150px;
+        }
+    .aboutHeroimg {
+    display: block;
+    position: relative;
+    width:80vw;
+    left: 0;
+    }
+    .aboutDescription{
+        display: block;
+        position: relative;
+        width:72vw;
+        left: 0;
+        top:0;}
+    
+        .skills {
+            display: block;
+            position: relative;
+            width:100%;
+            background-color: #d4d4d475;
+            margin: 0% 5% 3% 0%;
+            padding-left: 10px;
+        }
+        
+        .skill1, .skill2, .skill3{
+            padding-left: 10px;
+            display: block;
+        }
+    .projects {
+        display: block;
+
+        margin-bottom: 50%;
+        
+    }
+    .logo {
+            padding: 1%;
+            text-align: center;
+            height: 50px;
+            margin: 0 40%;
+            top: 10px;
+            background-image: url("../images/logo.png");
+            background-size: 60px;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: fixed;
+            width: 16%;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .hamburgerMenu {
+        display: block;
+        position: fixed;
+        width: 10%;
+        top: 10px;
+        right: 20px;
+        opacity: 80%;
+    }
+    .hamburgerMenuopen {
+        display: block;
+        position: fixed;
+        width: 10%;
+        top: 10px;
+        right: 20px;
+        opacity: 80%;
+    }
+    .hamburgerMenuclosed {
+        display: block;
+        position: fixed;
+        width: 10%;
+        top: 10px;
+        right: 20px;
+        opacity: 80%;
+    }
+    
+    footer {
+        background-color: #383738;
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 40px;
+        padding: 2%;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding-bottom: 10%;
+    }
+    
+    
+    .mainMenu {
+        font-size: 2rem;
+        list-style-type: none;
+        left: 0;
+    }
+    
+    .mainMenu li {
+        margin-top: 5%;
+        margin-left: -40px;
+    
+    }
+    }
