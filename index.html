@@ -2,63 +2,93 @@
 <html>
 <title></title>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/w3.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navigation">
-            <nav class="left-nav">
-                <ul>
-                    <li class="name"><a href="index.html">Lily Homer</a></li>
+    <header class="header-content">
+        <div class="navigation">
+        <nav class="left-nav">
+            <ul>
+                <li class="name"><a href="../index.html">LILY HOMER</a></li>
+            </ul>
+        </nav>
+        <div><a href="/index.html" class="logo">&nbsp;</a></div>
+        <nav class="right-nav">
+            <ul class="desktop-nav">
+                <li><a href="about.html">about</a></li>
+                <li>resume</li>
+                <li>contact</li>
+            </ul>
+    
+            <li id="navicon">
+                <img class="nav hamburgerMenuopen hide" src ="/images/x-icon.png" />
+              </li>  
+              <li id="navicon">
+                <img class="nav hamburgerMenuclosed" src ="/images/hamburger-icon.png" />
+              </li>
+              <div class="dropdown">
+              <ul class="side-categories hide">
+                <li><a href="/about.html" class="menu-item">About</a></li>
+                <li><p class="menu-item">Resume</p></li>
+                <li><p class="menu-item">Contact</p></li>
+              </ul></div>
+            
+              <!-- <div class="container">
+                <div id="toggle">
+            More   <img class="imageClass" src="/images/downArrow.png">
+                </div>
+                <ul id="dropdown">
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+            
                 </ul>
-            </nav>
-            <div class="logo"></div>
-            <nav class="right-nav">
-                <ul class="desktop-nav">
-                    <li><a href="about.html">about</a></li>
-                    <li>skills</li>
-                    <li>work</li>
-                    <li>contact</li>
-                </ul>
-                <div class="hamburgerMenu">
-                    <a href="menu.html">
-                    <img class="hamburgerMenuclosed" src="/images/hamburger-icon.png">
-                </a></div>
-            </nav>
+              </div> -->
+              
+        </nav>
+    </div>
     </header>
-    <section>
-        <div class="content">
-            <div class="intro"><p class="greeting">Well, Hi there. <mark>I'm Lily.</mark></p>
-            <p style="font-size: 2rem;"><em>UX Designer</em><strong> with an art, architecture, and communications background approaching design challenges with an eye for both</strong> <em>beauty</em> <strong>and</strong> <em>functionality</em><strong>, prioritizing</strong> <em>digital accessibility</em> and leveraging the web to work for us all.</p>
+    <section class="content">
+            <div class="intro">
+                <p class="greeting">Well, Hi there. <mark>I'm Lily.</mark></p>
+                <p style="font-size: 2rem;"><em>UX Designer</em><strong> with an art, architecture, and communications background approaching design challenges with an eye for both</strong> <em>beauty</em> <strong>and</strong> <em>functionality</em><strong>, prioritizing</strong> <em>digital accessibility</em> and leveraging the web to work for us all.</p>
             </div>
-            <h1>Portfolio</h1>
+    </section>
+    <section class="content">
+        <div class="title"><h1>Portfolio</h1></div>
+        <div class="projects">
             <div class="project1">
                 <h2 class="projectHeader">Department of Energy Website</h2>
-                <p class="projectDetails">Department of Energy Website<br /><button>View project</button></p>
+                <p class="projectDetails">A federal government agency tasked with addressing energy challenges, including climate change, environmental clean-up, energy security and infrastructure, nuclear power, and new technologies, requires a user-friendly interface and clear, high-quality information.
+                </p><p><em>Heuristics evaluation, color contrast analysis, user tests, affinity diagram, site map, lo-, mid-, and hi-fi prototypes.</em><br /><button>View project</button></p>
                 <img src="images/doe-bezels.png">
             </div>
             <div class="project2">
                 <h2 class="projectHeader">LGBTQIA+ Community Center Website</h2>
-                <p class="projectDetails">Stonewall Columbus Organization Website<br /><button>View project</button></p>
+                <p class="projectDetails">Stonewall Columbus, a cornerstone of support and community to the Columbus, OH region needs a website that represents their dynamic and wide-ranging mission.
+                </p><p><em>User interview and stakeholder interviews, user persona, user journey development, style guide, wireframes, and clickable prototype.</em><br /><button>View project</button></p>
                 <img src="images/stonewall-bezels.png">
             </div>
             <div class="project3">
                 <h2 class="projectHeader">Meditation and Reflection App</h2>
-                <p class="projectDetails">Functional app prototype (Sketch, XD), concept development, text mapping, flight paths, copy writing, style guide, logo, and central graphics design<br /><button>View project</button></p>
+                <p class="projectDetails"><em>Functional app prototype (Sketch, XD), concept development, text mapping, flight paths, copy writing, style guide, logo, and central graphics design</em><br /><button>View project</button></p>
                 <img src="images/redbook-bezels.png">
             </div>
-            <h3>View all projects</h3>
+            <h3><br /><a href="#">View all projects</a><br /><br /></h3>
         </div>
     </section>
     <footer>
         <ul>
-            <li>about</li>
-            <li>skills</li>
-            <li>work</li>
-            <li>contact</li>
+            <li>Contact</li>
+            <li>Social Media</li>
         </ul>
+        <p>Copyright 2023</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -2,71 +2,103 @@
 <html>
 <title></title>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/w3.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 </head>
-<body">
-    <header class="navigation">
-        <nav class="left-nav">
-            <ul>
-                <li class="name"><a href="index.html">Lily Homer</a></li>
+<body>
+<header class="header-content">
+    <div class="navigation">
+    <nav class="left-nav">
+        <ul>
+            <li class="name"><a href="../index.html">LILY HOMER</a></li>
+        </ul>
+    </nav>
+    <div><a href="/index.html" class="logo">&nbsp;</a></div>
+    <nav class="right-nav">
+        <ul class="desktop-nav">
+            <li><a href="about.html">about</a></li>
+            <li>resume</li>
+            <li>contact</li>
+        </ul>
+
+        <li id="navicon">
+            <img class="nav hamburgerMenuopen hide" src ="/images/x-icon.png" />
+          </li>  
+          <li id="navicon">
+            <img class="nav hamburgerMenuclosed" src ="/images/hamburger-icon.png" />
+          </li>
+          <div class="dropdown">
+          <ul class="side-categories hide">
+            <li><a href="/about.html" class="menu-item">About</a></li>
+            <li><p class="menu-item">Resume</p></li>
+            <li><p class="menu-item">Contact</p></li>
+          </ul></div>
+        
+          <!-- <div class="container">
+            <div id="toggle">
+        More   <img class="imageClass" src="/images/downArrow.png">
+            </div>
+            <ul id="dropdown">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+        
             </ul>
-        </nav>
-        <div class="logo"></div>
-        <nav class="right-nav">
-            <ul class="desktop-nav">
-                <li><a href="about.html">about</a></li>
-                <li>skills</li>
-                <li>work</li>
-                <li>contact</li>
-            </ul>
-            <div class="hamburgerMenu">
-                <a href="menu.html">
-                <img class="hamburgerMenuclosed" src="/images/hamburger-icon.png">
-            </a></div>
-        </nav>
+          </div> -->
+          
+    </nav>
+</div>
 </header>
     <section>
         <div class="content">
             <div class="box">
-            <h1>About Me</h1>
-            <div class="aboutHeroimg"><img src="images/lily-homer.jpg"/></div>
-            <p class="aboutDescription">Hello, Internet!
-
-                I’m Lily Homer, a UX designer living and working in Chicago. I have experience in various forms of creative media, producing physical installations, written work, and digital experiences; working in web design, communications, marketing, and exhibitions for arts organizations and universities; and prioritize user feedback and digital accessibility (LinkedIn).
-                <br /><br />
-                I have an MFA in Fiber & Material Studies from the School of the Art Institute of Chicago and a BA in Studio Art (Architecture) from Wesleyan University in Middletown, CT..<br /><button>Download Resume</button>
-            </p>
-            
-        </div>
-            <div class="projects">
-                <h2 class="projectHeader">My UX Skills</h2>
+                <div class="title"><h1>About Me</h1></div><br />
+                <div class="aboutHeroimg"><img alt="Woman embroidering at a table" src="images/lily-homer.jpg"/></div>
+                <p class="aboutDescription">Hello, Internet!
+    
+                    I’m Lily Homer, a UX designer living and working in Chicago. I have experience in various forms of creative media, producing physical installations, written work, and digital experiences; working in web design, communications, marketing, and exhibitions for arts organizations and universities; and prioritize user feedback and digital accessibility (LinkedIn).
+                    <br /><br />
+                    I have an MFA in Fiber & Material Studies from the School of the Art Institute of Chicago and a BA in Studio Art (Architecture) from Wesleyan University in Middletown, CT..<br /><button>Download Resume</button>
+                </p>
                 
-                <div class="skills skill1">
-                    <h3>User Research</h3>
-                    <p>My approach to user research carefully balances user needs and desires with businesses the requirements and goals. Asking the right questions of stakeholders helps distill the needs of the project.</p>
+            </div>
+            <div class="project-block my-skills"><h2>My UX Skills</h2></div>
+         <!--  My UX Skills section coded using CSS flex -->
+            <div class="skills">
+                    <div class="skill skill1">
+                      <h3>User Research</h3>
+                    <p>My approach to user research carefully balances user needs and desires with businesses the requirements and goals. Asking the right questions of stakeholders helps distill the needs of the project.</p></div>
+                    <div class="skill skill2">
+                      <h3>Qualitative Interviews</h3>
+                    <p>The essential qualities I bring to qualitative interviews are curiosity, emotional intelligence, and commitment to developing a practical product.</p></div>
+                    <div class="skill skill3">
+                      <h3>User Empathy</h3>
+                    <p>Collecting data on a variety of users is essential to forming a clear picture of project goals. I lead with a commitment to web accessibility and inclusivity.</p>
                 </div>
-                <div class="skills skill2">
-                    <h3>User Research</h3>
-                    <p>My approach to user research carefully balances user needs and desires with businesses the requirements and goals. Asking the right questions of stakeholders helps distill the needs of the project.</p>
-                </div>
-                <div class="skills skill3">
-                    <h3>User Research</h3>
-                    <p>My approach to user research carefully balances user needs and desires with businesses the requirements and goals. Asking the right questions of stakeholders helps distill the needs of the project.</p>
-                </div>
-            </div></div>
+            </div>
+            <div class="project-block my-tools"><h2>My Tools</h2></div>
+            <div class="tools">
+                <div class="skill skill1">
+                <p><ul><li>Paper and Pencil</li>
+                    <li>Figma</li>
+                    <li>InVision</li>
+                    <li>Adobe UD, InDesign, Dreamweaver, Photoshop, Illustrator</li>
+                    <li>Google Drive</li></ul></p></div>
+        </div>
+        </div>
         
     </section>
     <footer>
         <ul>
-            <li>about</li>
-            <li>skills</li>
-            <li>work</li>
-            <li>contact</li>
+            <li>Contact</li>
+            <li>Social Media</li>
         </ul>
+        <p>Copyright 2023</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
